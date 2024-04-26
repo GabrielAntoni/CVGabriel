@@ -1,0 +1,27 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ certificado.nomeCert }}</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome Do Curso</th>
+                <th>Duração do Curso</th>
+            </tr>
+        </thead>
+        <thead>
+
+            <tr>
+                <td> {{ certificado.nomeCert }}</td>
+                <td>{{ certificado.duracao_em_horas }}</td>
+            </tr>
+
+        </thead>
+    </table>
+</body>
+</html>

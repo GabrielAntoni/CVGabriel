@@ -1,0 +1,7 @@
+
+table {
+    border: 1px solid red;
+    width: 50% !important; /*Importante manter o !important rs */
+    margin: 0 auto;
+}
+

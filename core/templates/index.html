@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum Vitae</title>
+        <link rel="stylesheet" href="{% static 'css/tabelas.css' %}">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
+<body>
+    <h1>Curriculo</h1>
+    <h2><b>Nome:</b>Gabriel Antoni de Moraes Souza</h2>
+    <p>gabriel.a.m.souza@hotmail.com | (91)985689439</p>
+    <h3><b>Objetvo: </b>Desenvolvedor Back-end</h3>
+    <p>Estudante de Ciência da Computação no sexto semestre, com experiência como suporte técnico, configuração de sistemas e automação de relatórios. Trabalhei na Korin, assegurando a estabilidade dos sistemas, configurando soluções específicas e implementando eficientes processos de automação com ferramentas como Power BI e Excel com VBA. Busco oportunidades que me permitam aplicar e expandir meu conhecimento na área de Tecnologia.</p>
+    <h3>Formação</h3>
+    <h4>Graduação em Ciência da Computação</h4>
+    <ul>
+        <li>Universidade: UNIP (Universidade Paulista)</li>
+        <li>Período: Cursando o 6º período</li>
+        <li>Previsão de Conclusão: junho de 2025</li>
+    </ul>
+    <h4>Certificações</h4>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome Do Curso</th>
+                <th>Duração do Curso</th>
+            </tr>
+        </thead>
+        <thead>
+        {% for C in Certificados %}
+            <tr>
+                <td><a href= "{% url 'certificado' slug=C.slug %}"> {{C.nomeCert }}</a></td>
+                <td><center>{{ C.duracao_em_horas }} h</center></td>
+            </tr>
+        {% endfor %}
+        </thead>
+    </table>
+
+</body>
+</html>
