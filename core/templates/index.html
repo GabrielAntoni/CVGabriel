@@ -1,3 +1,4 @@
+{% load bootstrap4 %}
 {% load static %}
 
 <!DOCTYPE html>
@@ -5,16 +6,19 @@
     <head>
         <meta charset="UTF-8">
         <title>Curriculum Vitae</title>
+        {% load bootstrap4 %}
         <link rel="stylesheet" href="{% static 'css/tabelas.css' %}">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>
 <body>
     <h1>Curriculo</h1>
-    <h2><b>Nome:</b>Gabriel Antoni de Moraes Souza</h2>
+    <h4><b>Nome:</b>Gabriel Antoni de Moraes Souza</h4>
     <p>gabriel.a.m.souza@hotmail.com | (91)985689439</p>
-    <h3><b>Objetvo: </b>Desenvolvedor Back-end</h3>
-    <p>Estudante de Ciência da Computação no sexto semestre, com experiência como suporte técnico, configuração de sistemas e automação de relatórios. Trabalhei na Korin, assegurando a estabilidade dos sistemas, configurando soluções específicas e implementando eficientes processos de automação com ferramentas como Power BI e Excel com VBA. Busco oportunidades que me permitam aplicar e expandir meu conhecimento na área de Tecnologia.</p>
-    <h3>Formação</h3>
+    <h4><b>Objetvo: </b>Desenvolvedor Back-end</h4>
+    <p>Estudante de Ciência da Computação no sexto semestre, com experiência como suporte técnico, configuração de sistemas e automação de relatórios.
+        Trabalhei na Korin, assegurando a estabilidade dos sistemas, configurando soluções específicas e implementando eficientes processos de automação com ferramentas como Power BI e Excel com VBA.
+        Busco oportunidades que me permitam aplicar e expandir meu conhecimento na área de Tecnologia.</p>
+    <h4>Formação</h4>
     <h4>Graduação em Ciência da Computação</h4>
     <ul>
         <li>Universidade: UNIP (Universidade Paulista)</li>
@@ -26,7 +30,7 @@
     <table>
         <thead>
             <tr>
-                <th>Nome Do Curso</th>
+                <th style="margin-left: 20px;">Nome Do Curso</th>
                 <th>Duração do Curso</th>
             </tr>
         </thead>
@@ -39,6 +43,26 @@
         {% endfor %}
         </thead>
     </table>
-
+    <h4>Experiência Profissional </h4>
+    <h4>Korin</h4>
+    <h4>Suporte Técnico (1 de agosto de 2022 – 1 de maio de 2024)</h4>
+    <p>Na Korin desempenhei como Suporte, atuando em várias frentes para otimizar a eficiência operacional e a experiência do usuário.
+        Minhas responsabilidades abrangiam desde o suporte direto aos pontos de venda até a configuração de sistemas e a implementação de soluções de automação de relatórios.</p>
+    <h4>Principais Contribuições</h4>
+    <ul>
+        <li>Ofereço suporte técnico abrangente aos pontos de venda, garantindo a estabilidade e disponibilidade contínua dos sistemas essenciais.</li>
+        <li>Lido ativamente com a configuração e manutenção contínua de sistemas e implemento ajustes para atender às necessidades específicas da operação.</li>
+        <li>Utilizo Power BI e Excel com VBA, para criar fluxos de trabalho cada vez mais eficientes, contribuindo para a evolução constante dos processos.</li>
+    </ul>
+    <h4>Habilidades Técnicas</h4>
+    <ul>
+        <li>Linguagens de Programação: Experiência sólida em Python, Java, C, VBA, Javascript, HTML e CSS</li>
+        <li>Ambientes de Desenvolvimento Integrado (IDEs): Proficiente em PyCharm e Eclipse, garantindo eficiência no desenvolvimento de software.</li>
+	    <li>Banco de Dados: Conhecimento em SQL e MySQL, com capacidade para projetar e otimizar consultas.</li>
+	    <li>Controle de Versão: Habilidade avançada em Git, assegurando colaboração eficaz e rastreamento preciso de alterações em projetos.</li>
+        <li>Frameworks de Desenvolvimento Web: Proficiente em Django para desenvolvimento rápido e design de aplicativos web escaláveis, além de habilidades com HTML5 e CSS3 para desenvolvimento de interfaces responsivas.</li>
+        <li>IDEs: PyCharm, Eclipse.</li>
+    </ul>
+{% bootstrap_javascript jquery='full' %}
 </body>
 </html>

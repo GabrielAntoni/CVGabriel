@@ -1,7 +1,21 @@
 
 table {
-    border: 1px solid red;
+    border: 1px solid blue;
     width: 50% !important; /*Importante manter o !important rs */
-    margin: 0 auto;
 }
+
+tr {
+    border: 1px solid blue;
+    width: 50% !important; /*Importante manter o !important rs */
+}
+
+td {
+    border: 1px solid blue;
+    width: 50% !important; /*Importante manter o !important rs */
+}
+th {
+    text_align: center;
+    border: 1px solid blue;
+}
+
 
